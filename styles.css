@@ -847,7 +847,7 @@ select:focus {
   transform: translateY(0);
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE: main layout + MOBILE NAV */
 
 @media (max-width: 960px) {
   .hero-layout,
@@ -860,8 +860,7 @@ select:focus {
     padding-top: 96px;
   }
 
-  /* NOTE: no order changes, hero-copy remains first on mobile */
-  
+  /* Mobile nav – slide-down, show all links */
   .nav {
     position: absolute;
     inset-inline: 0;
@@ -873,12 +872,13 @@ select:focus {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 200ms ease-out, opacity 200ms ease-out;
+    transition: max-height 220ms ease-out, opacity 200ms ease-out;
   }
 
   .nav.open {
-    max-height: 260px;
+    max-height: 80vh;     /* enough height for all nav items */
     opacity: 1;
+    overflow-y: auto;     /* scroll if content taller than screen */
   }
 
   .nav-toggle {
@@ -1129,7 +1129,7 @@ select:focus {
   color: rgba(15, 23, 42, 0.7);
 }
 
-/* responsive tweaks */
+/* responsive tweaks for article layout */
 
 @media (max-width: 960px) {
   .article-grid {
