@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stop Optimising for Keywords. Start Optimising for Intent.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Why keyword lists are not enough, and how to design SEO for semantic intent. A practical guide by Ajith, AI Research Engineer & Architect." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-layer"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Ajith<span>.</span></div>
+      <nav class="nav" id="nav">
+        <a href="blog.html">Blog</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <p class="page-hero-kicker">Semantic search · Strategy</p>
+        <h1 class="page-hero-title">Stop Optimising for Keywords. Start Optimising for Intent.</h1>
+        <p class="page-hero-subtitle">
+          Most SEO programmes still treat keywords as magic words. In reality, great search performance
+          comes from understanding the intent behind messy, human language – and designing content and
+          product journeys around that intent.
+        </p>
+
+        <div class="article-meta">
+          <div class="meta-avatar">A</div>
+          <div>
+            <p class="meta-text-primary">Ajith M</p>
+            <p class="meta-text-secondary">AI Research Engineer & Architect · Full-Stack Growth Strategist</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article -->
+    <section class="article-layout">
+      <div class="container article-grid">
+        <!-- TOC -->
+        <aside class="toc-card fade-in">
+          <h2>Table of contents</h2>
+          <ol>
+            <li><a href="#sec1">The problem with keyword-first SEO</a></li>
+            <li><a href="#sec2">Thinking in intents, not phrases</a></li>
+            <li><a href="#sec3">Designing an intent map for your product</a></li>
+            <li><a href="#sec4">How AI models help – and where they don’t</a></li>
+            <li><a href="#sec5">What this changes for your roadmap</a></li>
+          </ol>
+        </aside>
+
+        <!-- Body -->
+        <article class="article-body fade-in">
+          <h2 id="sec1">1. The problem with keyword-first SEO</h2>
+          <p>
+            Traditional SEO workflows start with a spreadsheet full of keywords, volumes and difficulty
+            scores. Teams then assign articles or landing pages to those keywords and hope that traffic
+            equals revenue.
+          </p>
+          <p>
+            The issue is simple: buyers don’t think in exact-match phrases. They think in
+            messy, contextual language – especially in AI, SaaS, and compliance categories where
+            solutions are not obvious.
+          </p>
+
+          <h2 id="sec2">2. Thinking in intents, not phrases</h2>
+          <p>
+            Intent is what the user is <em>trying to achieve</em> when they type, tap or speak a query.
+            “AI product search that understands natural language” and “retail semantic search engine”
+            are different strings, but the underlying intent is almost identical.
+          </p>
+          <ul>
+            <li><strong>Problem intent</strong> – “why”, “how”, “what is” style queries.</li>
+            <li><strong>Solution intent</strong> – comparisons, alternatives, use-cases.</li>
+            <li><strong>Execution intent</strong> – templates, checklists, implementation details.</li>
+          </ul>
+
+          <h2 id="sec3">3. Designing an intent map for your product</h2>
+          <p>
+            Start from your product’s value pillars, then map intents to each pillar. For GenAIEmbed,
+            for example, one pillar is <strong>semantic discovery</strong>. Intents around that include:
+          </p>
+          <ul>
+            <li>“How do I make my ecommerce search understand natural language?”</li>
+            <li>“Examples of AI search for fashion catalogues”.</li>
+            <li>“Product discovery vs search in retail”.</li>
+          </ul>
+          <p>
+            Each of these should map to a small cluster of assets: one flagship article,
+            one supporting how-to, one product-centred explainer, and ideally a case study.
+          </p>
+
+          <h2 id="sec4">4. How AI models help – and where they don’t</h2>
+          <p>
+            Embedding models are excellent at clustering queries into intent buckets. They allow you to
+            see that “winter office jacket” and “cozy blazer for cold AC” are part of the same need.
+          </p>
+          <p>
+            What models cannot do for you is decide <em>which</em> intents matter to your business and
+            how to shape your product narrative around them. That still requires humans who understand
+            the market, pricing, and sales motion.
+          </p>
+
+          <h2 id="sec5">5. What this changes for your roadmap</h2>
+          <p>
+            When you shift from keyword lists to intent maps, content stops being random blog posts and
+            starts behaving like product surface area. You can answer real jobs-to-be-done, link those
+            answers to product capabilities, and measure impact in pipeline – not just visitors.
+          </p>
+          <p>
+            The practical next step: audit your current content by intent, not by topic, and notice
+            where your best intents have zero deep assets. That’s where the next sprint lives.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ajith. All rights reserved.</p>
+      <p class="footer-tagline">AI Research Engineer · Architect · Full-Stack Growth Strategist</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
