@@ -155,12 +155,24 @@ body::after {
   font-size: 1.4rem;
   letter-spacing: -0.08em;
   color: var(--text-main);
+  text-decoration: none;        /* remove underline */
+}
+
+/* make sure no state adds it back */
+.logo:link,
+.logo:visited,
+.logo:hover,
+.logo:active {
+  text-decoration: none;
+  color: var(--text-main);
 }
 
 .logo span {
   color: var(--accent);
   margin-left: 2px;
+  text-decoration: none;        /* just in case */
 }
+
 
 .nav {
   display: flex;

@@ -1,0 +1,26 @@
+# ------------------------------
+# robots.txt for arunaiajith.blog
+# Author: Ajith Kumar M (arunaiajith)
+# Purpose: Control crawler access & support SEO
+# ------------------------------
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /drafts/
+
+# Sitemap
+Sitemap: https://www.arunaiajith.blog/sitemap.xml
+
+# Allow crawling of essential files
+Allow: /*.css$
+Allow: /*.js$
+
+# Block crawling of unnecessary tracking parameters
+Disallow: /*?ref=
+Disallow: /*?utm_source=
+Disallow: /*?utm_campaign=
+Disallow: /*?utm_medium=
+Disallow: /*?fbclid=
